@@ -23,8 +23,14 @@ This project uses only **NumPy** for matrix operations, demonstrating the intern
 2. Run `testing.py`
 
 ```Python
+import numpy as np
+import neural_network as nn
+
 network = nn.NeuralNetwork(data_cnt=28*28, neuron_cnt=16, classes_cnt=26, lr=0.05)
 network.load("handwritten_model_weights.npz")
 network.forward(X_test)
 predictions = network.get_predictions()
+
+print(f"prediction = {chr(ord('A')+np.argmax(predictions))}")
+print(f"confidence = {np.max(predictions)}")
 ```
