@@ -26,7 +26,7 @@ This project uses only **NumPy** for matrix operations, demonstrating the intern
 import numpy as np
 import neural_network as nn
 
-X_text = ... # data
+X_test = ... # data
 
 network = nn.NeuralNetwork(data_cnt=28*28, neuron_cnt=16, classes_cnt=26, lr=0.05)
 network.load("handwritten_model_weights.npz")
