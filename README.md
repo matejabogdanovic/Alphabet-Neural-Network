@@ -19,5 +19,5 @@ This project uses only **NumPy** for matrix operations, demonstrating the intern
 * **Pandas** - Data loading and subset management
 
 ## 📂 Usage
-1. Draw a letter (A-Z) and save it as 'letter.png' in root directory.
-2. Run `testing.py`.
+1. Draw a letter (A-Z) and save it as 'letter.png' in root directory
+2. Run `testing.py`
