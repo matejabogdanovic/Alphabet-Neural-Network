@@ -36,3 +36,6 @@ predictions = network.get_predictions()
 print(f"prediction = {chr(ord('A')+np.argmax(predictions))}")
 print(f"confidence = {np.max(predictions)}")
 ```
+
+## 📊 Dataset 
+Download dataset from Kaggle <a href="https://www.kaggle.com/datasets/sachinpatel21/az-handwritten-alphabets-in-csv-format?resource=download"> A-Z Handwritten Alphabets in .csv format </a>
