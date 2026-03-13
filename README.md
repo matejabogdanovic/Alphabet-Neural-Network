@@ -19,5 +19,12 @@ This project uses only **NumPy** for matrix operations, demonstrating the intern
 * **Pandas** - Data loading and subset management
 
 ## 📂 Usage
-1. Draw a letter (A-Z) and save it as 'letter.png' in root directory
+1. Open `letter.png` in any image editor and write a letter (A-Z)
 2. Run `testing.py`
+
+```Python
+network = nn.NeuralNetwork(data_cnt=28*28, neuron_cnt=16, classes_cnt=26, lr=0.05)
+network.load("handwritten_model_weights.npz")
+network.forward(X_test)
+predictions = network.get_predictions()
+```
